@@ -1,16 +1,16 @@
 require 'fizzbuzz'
 
 describe 'fizzbuzz' do
-  it 'returns "fizz" when a divisor of 3 is passed in' do
+  it 'returns "fizz" if a number divisible by 3 is passed it' do
     expect(fizzbuzz(3)).to eq 'fizz'
   end
-  it 'returns the number when any other number is passed in' do
-    expect(fizzbuzz(2)).to eq 2
+  it 'returns the number when not divisible by 3' do
+    expect(fizzbuzz(1)).to eq 1
   end
-  it 'returns "buzz" when a divisor of 5 is passed in' do
+  it 'returns "buzz" if a number divisible by 5 is passed to it' do
     expect(fizzbuzz(5)).to eq 'buzz'
   end
-  it 'returns "fizzbuzz" when a divisor of 15 is passed in' do
+  it 'returns "fizzbuzz" if a number divisible by 15 is passed to it' do
     expect(fizzbuzz(15)).to eq 'fizzbuzz'
   end
 end
